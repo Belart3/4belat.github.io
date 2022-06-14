@@ -1,0 +1,361 @@
+body {
+    background: #aa9b9b;
+    color: #474747;
+    margin: auto 0;
+    width: 100%;
+}
+
+/*find a more suitable design for the page logo*/
+.art{
+    float: left;
+    margin: 0px 0px 0px 4px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: monospace;
+    color: crimson; 
+}
+
+.art:hover{
+    opacity: 0.7;
+}
+
+
+
+.time{
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    float: left;
+    margin-left: 80px;
+    margin-top: 100px;
+    margin-right: 100px;
+    shape-outside: circle(250px);
+}
+
+.text{
+direction: rtl;
+}
+
+.profile{
+    height: 70vh;
+    width: 50vh;
+    border-radius: 16px;
+    filter: saturate(150%);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.card:hover .img-top {
+    display: inline;
+}
+
+@media only screen and (max-width:700px) {
+    .div1{
+        font-size: 0.7em;
+        padding:0;
+    }
+    .div2{
+        font-size: 0.7em;
+        padding:0;
+    }
+}
+
+.dd{
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+}
+
+.dd-content{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    width: max-content;
+    font-size: small;
+    font-family: cursive;
+    z-index: auto;
+    background: #f0e7e7;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.dd:hover > .dd-content{
+    display: block;
+}
+
+.flow{
+    margin-bottom: 8px;
+    padding: 2px;
+    border-radius: 2px;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: #180f05;
+    background:
+    linear-gradient(-45deg, #000  40%, #1b5170 0 60%, #000  0) right/300% 100% no-repeat, 
+    linear-gradient(-45deg, #0000 40%, #1b5170 0 100%, #0000 0) right/300% 100% no-repeat; 
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box; 
+    transition: 0.6s
+}
+
+/*try to find ways to animate the flow interface when hovered on*/
+.flow:hover{
+     color: white; 
+    /* background-color: crimson; */
+    width: auto; 
+    transform: scale(1.05);
+    align-self: center;
+    transition-duration: 0.6s;
+    background-position: left;
+}
+
+::-webkit-scrollbar{
+    width: 1.5rem;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px #0000008e;
+    border-radius: 16px;
+    margin: 20vw;
+}
+
+::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 6px #000000c0;
+    background: #aaacad;
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #4d4e50;
+    box-shadow: inset 0 0 6px #020000;
+}
+
+::-webkit-scrollbar-corner{
+    background: none;
+}
+
+a{
+    /* display: block; */
+    text-decoration: none;
+    color: #070a13;
+    font-family: cursive;
+    width: fit-content;
+}
+
+.link{
+    text-align: left;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    /* color: #070a13; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid; 
+    border-radius: .5em; */
+    padding: .5em 1em;
+}
+
+.link:hover{
+    color: crimson;
+    opacity: 0.7;
+    width: fit-content;
+} 
+
+nav {
+    font-family: cursive;
+    text-align: right;
+    background: #0e0d0d;
+    overflow: visible;
+    width: 100%;
+    top: 0;
+    }
+
+nav:hover{
+    box-shadow: 0 2px 8px rgb(0, 0, 0); 
+    animation: 2s multicolor infinite alternate;
+    color: #fff;
+}
+    @keyframes multicolor {
+        0%{
+            background-color: #2295f3;
+        }
+        100%{
+            background-color: #ebf82f;
+        }
+    }
+
+.heds{
+        position: fixed;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.596);
+ }  
+
+ .bag{
+    font-family: fantasy;
+    font-weight: 500;
+    font-size: 80px;
+    z-index: 0;
+    position: absolute; 
+    text-align: center;
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+    opacity: 0.4;
+    margin-left: 10vh;
+    /* margin: 0 20px; */
+    text-transform: lowercase;
+    background: linear-gradient(to right bottom, #1613bd 0%, #d915b5 50%, #ea7ea2 100%);
+    background: -moz-linear-gradient(to right bottom, #1613bd 0%, #d915b5 50%, #ea7ea2 100%);
+    background: -webkit-linear-gradient(to right bottom, #1613bd 0%, #d915b5 50%, #ea7ea2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.style{
+ text-align: center;
+ box-sizing: content-box;
+ background: #fff;
+ margin: 10px;
+ color: #474747;
+ min-height: 120px;
+ min-width: 120px; 
+ width: 100px;
+ height: 200px;
+ border-radius: 16px;
+ position: relative;
+ padding: 15px 10px; 
+ display:flex;
+ cursor: pointer;
+ flex-direction: column;
+ filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+ transition: all 0.33s linear;
+}
+
+.style:hover{
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 3px 6px;
+    -o-box-shadow: rgba(0,0,0,0.8) 0px 3px 6px; inset: rgba(0,0,0,0.8);
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 6px;
+    background: #2275e2;
+    color: #fff;
+}
+
+i{
+    color: #ff8a90;
+    text-align: center;
+    font-family: cursive;
+}
+
+h4{
+    text-align: center;
+    font-size: 30px;
+    color:  #ff8a00;
+}
+
+h3{
+    color: #fff;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+}
+
+p{
+    line-height: 50px;
+    color: #173459;
+    margin: 20px;
+    z-index: 6;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon{
+    border-radius: 50%;
+    width: 15px; height: 15px;
+}
+
+.album{
+    border-radius: 14px;
+    background-size: 100px , 100px;
+}
+
+.delt{
+    border-radius: 12px;
+    background-size: 20px 200px;
+}
+
+.footer{
+    clear: both;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: #131314;
+    position: absolute;
+}
+
+.div1, .div2{
+ border-radius: 16px;
+ padding-top: 50px;
+ padding-left: 80px;
+ padding-right: 30px;
+ padding-bottom: 30px;
+ min-width: 60vw;
+ height: 85vh;
+ width: 60vw;
+ filter: drop-shadow(0 5px 10px rgba(0,0,0,.94));
+ display: flex;
+ overflow: scroll;
+ position: relative;
+ flex-direction: column;
+ margin-top: 150px;
+ margin-bottom: 50px; 
+ z-index: 2;
+ transition: all 0.1s linear;
+}
+
+.div1{
+    background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+    color: #fff;
+    margin-left: 5vw;
+    margin-right: 40vw;
+}
+
+.div2{
+    background-color: #fff;
+    color: #070a13;
+    margin-left: 10vw;
+    margin-right: 35vw;
+}
+
+
+
+.container{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr) ;
+}
+
+.foot{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    display: inline-block;
+}
+
